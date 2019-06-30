@@ -16,7 +16,7 @@
         <TargetCommonOption>
           <Device>STM32F427IITx</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32F4xx_DFP.2.11.0</PackID>
+          <PackID>Keil.STM32F4xx_DFP.2.13.0</PackID>
           <PackURL>http://www.keil.com/pack</PackURL>
           <Cpu>IRAM(0x20000000,0x00030000) IRAM2(0x10000000,0x00010000) IROM(0x08000000,0x00200000) CPUTYPE("Cortex-M4") FPU2 CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -398,16 +398,6 @@
               <FilePath>..\application\chassis_task.c</FilePath>
             </File>
             <File>
-              <FileName>gimbal_task.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\application\gimbal_task.c</FilePath>
-            </File>
-            <File>
-              <FileName>shoot_task.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\application\shoot_task.c</FilePath>
-            </File>
-            <File>
               <FileName>timer_task.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\application\timer_task.c</FilePath>
@@ -541,16 +531,6 @@
               <FileName>chassis.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\components\modules\chassis.c</FilePath>
-            </File>
-            <File>
-              <FileName>gimbal.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\components\modules\gimbal.c</FilePath>
-            </File>
-            <File>
-              <FileName>shoot.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\components\modules\shoot.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -812,6 +792,11 @@
               <FileType>1</FileType>
               <FilePath>..\bsp\cubemx\USB_DEVICE\App\usbd_cdc_if.c</FilePath>
             </File>
+            <File>
+              <FileName>i2c.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\bsp\cubemx\Core\Src\i2c.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -966,6 +951,16 @@
               <FileName>stm32f4xx_ll_usb.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\bsp\cubemx\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_usb.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_hal_i2c.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\bsp\cubemx\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2c.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_hal_i2c_ex.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\bsp\cubemx\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2c_ex.c</FilePath>
             </File>
           </Files>
         </Group>
